@@ -6,8 +6,9 @@ The first and foremost important page I will complete will be the Ball Room, whi
 As I have more time to devise more games from here, such as a building blocks area or an avalanche simulator to name a few, I will add to a list on this page to fully list the areas and functions of the site. The goal is to increase scope as time passes, so I do not give myself unattainable goals; the primary objective is to set challenges based on what is learned. 
 The page format will go as follows:
 
-Landing Page with Menu            Chosen Area Page
-               ^^ = = = = = = = = = = = = ^^
+Landing Page with Menu-----------Chosen Area Page
+
+          ^^ = = = = = = = = = = = = ^^
 
 The Current list of environments/games will be here: 
 Area
