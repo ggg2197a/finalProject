@@ -1,21 +1,22 @@
 # finalProject
 Project 4 for IGME-230
 
-My project will be a small series of mini-apps which are meant to be mindless; small tech demos which are amusing to simply play with. The goal is to create three small things, described below, which are simply open places for the user to play with the given tools. 
-The first will be a simple ball, rendered within a box on-screen that has physics active on it, with gravity acting on it. The user should be able to click and take hold of the ball, and be able to throw it around the space. It will bounce, though it can come to a stop due to forces being degraded over time. 
-The second will be a drawing app, not unlike the exercise we did in-class. However, along with a larger array of colors available, it will also include a larger space to draw and small grid-size so the pictures can be higher resolution. 
-The third mini-app will be an effect demo, where the mouse creates a ripple effect when dragged across a black box (this is inspired by the D3 demo, OMG Particles II), with modification which will allow the user to change the shape of the effect. 
-Each of these will be divided into their own pages, each connected to a landing page. Each page will then be connected to each other, but not back to the original landing page; the landing page will have served its purpose by that point. 
+My goal for this project is to create a site with a small series of physics-based mini-games, designed to be played idly with the mouse. These 'games' will, in essence, be small environments with small objects the user can interact with easily. There is no winning/losing, as the open spaces are meant to give the user the ability to choose what they do within the environment given to them. These pages will be listed on a main page, and listed on the other pages in a drop-down menu in alphabetical order. 
+The first and foremost important page I will complete will be the Ball Room, which will consist of a box area with a ball inside of it. It will be capable of bouncing against the bounds of the environment, and will bounce until it comes to a stop. The goal is to give the user a simple space where they can simply enjoy toying with the physics. For example, the user may toss the ball up and try to catch it, or they may wish to toss it around aimlessly. The point is to give the user freedom to explore the physics presented to them. The user will also have the ability to change the color of the ball via a small menu below the play area. 
+As I have more time to devise more games from here, such as a building blocks area or an avalanche simulator to name a few, I will add to a list on this page to fully list the areas and functions of the site. The goal is to increase scope as time passes, so I do not give myself unattainable goals; the primary objective is to set challenges based on what is learned. 
+The page format will go as follows:
 
-Here's a basic layout of the HTML structure: 
-Connected by a header menu
-Ball<-->Drawing<-->Effects
-^        ^           ^
-|        |           |
-\--------|-----------/                        
-   Landing Page
+Landing Page with Menu            Chosen Area Page
+               ^^ = = = = = = = = = = = = ^^
 
-Each page will be relatively simple, using plain and non-obtrusive colors to maintain focus on the center of the page. This is so the user focuses on the applications, and has a calmer experience. 
-In order to complete these objectives, I will have to learn how to program physics in Javascript, and how to apply those physics to a locked space in a browser. I will also have to learn the d3 systems deeply, as well as how to use Javascript efficiently to make the most of those systems. I will have to understand, as well, how the different versions of d3 affect the way I create the things I need. 
+The Current list of environments/games will be here: 
+Area
+
+
+In order to build new things using Matter.js, I will have to become aware of how the systems work, and how outside elements in the page can affect the created physics areas on the page. Along with basic and advanced functions used by the script, I will have to also learn how to elegantly design the page so it is easy to navigate, calm on the eyes, and interesting to the user. 
+
+Below is the link to my repository; it is public, and I will attempt to update it often with smaller, more easily built areas for use early on in order to build practice before attempting more advanced applications. 
+
+https://github.com/ggg2197a/finalProject
 
 
