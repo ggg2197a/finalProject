@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.12.0/matter.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link rel="stylesheet" href="room.css">
+    <title>Final Project - River</title>
+</head>
+<body>
+    <section id="navigator">
+        <h2>Available Environments</h2>
+        <ul>
+            <li><a href="ballroom.html">Ball Room</a></li>
+            <li><a href="boxRoom.html">Box Room</a></li>
+            <li><a href="sliderRoom.html">Slider Room</a></li>
+        </ul>
+    </section>    
+    <header>
+         <h1>Physics Environment: Boxes</h1>
+    </header>
+    <section id = "area">
+        
+    </section>
+    <script>
+        var Engine = Matter.Engine,
+        Render = Matter.Render,
+        Runner = Matter.Runner,
+        Composites = Matter.Composites,
+        MouseConstraint = Matter.MouseConstraint,
+        Mouse = Matter.Mouse,
+        World = Matter.World,
+        Bodies = Matter.Bodies;
+
+        var engine = Engine.create();
+
+        var render = Render.create({
+            element: document.getElementById("area"),
+            engine: engine,
+            options: {
+                    width: 800,
+                    height: 600,
+                    background: '#1A0128',
+                    wireframes: false
+                }
+        });
+
+        var runner = Runner.create();
+        Runner.run(runner, engine);
+
+        var stack = Composites.pyramid(125, 240, 13, 9, 0, 0, function(x,y) { 
+            return Bodies.rectangle(x, y, 40, 40,
+            {
+                render:
+                {
+                    fillStyle: '#C8003C',
+                    strokeStyle: '#000000',
+                    lineWidth: 1
+                }
+            });
+        });
+        var ceiling = Bodies.rectangle(400, 0, 800, 50, { 
+            isStatic: true,
+            render:
+            {
+                fillStyle: '#600095',
+                strokeStyle: '#7B00BF',
+                lineWidth: 1
+            } 
+        });
+        var floor = Bodies.rectangle(400, 600, 800, 50, { 
+            isStatic: true,
+            render:
+            {
+                fillStyle: '#600095',
+                strokeStyle: '#7B00BF',
+                lineWidth: 1
+            }  
+        });
+        var wallA = Bodies.rectangle(800, 300, 50, 600, { 
+            isStatic: true,
+            render:
+            {
+                fillStyle: '#600095',
+                strokeStyle: '#7B00BF',
+                lineWidth: 1
+            }   
+        }); 
+        var wallB = Bodies.rectangle(0, 300, 50, 600, { 
+            isStatic: true,
+            render:
+            {
+                fillStyle: '#600095',
+                strokeStyle: '#7B00BF',
+                lineWidth: 1
+            }   
+        }); 
+
+        World.add(engine.world, [stack, ceiling, floor, wallA, wallB]);
+
+        var mouse = Mouse.create(render.canvas),
+        mouseConstraint = MouseConstraint.create(engine, 
+        {
+            mouse: mouse, 
+            constraint: 
+            {
+                stiffness: 0.2,
+                render:
+                {
+                    visible: false
+                }
+            }
+        });
+
+        World.add(engine.world, mouseConstraint);
+
+        render.mouse = mouse;  
+
+        Render.lookAt(render, 
+        {
+            min: {x: 0, y:0 },
+            max: {x:800, y:600}
+        });
+
+        Engine.run(engine);
+        Render.run(render);
+    </script>
+    <section id="description">
+        <p>This room contains a pyramid of boxes which may be interacted with using the mouse. Give them a toss, or try building things!</p>
+    </section>
+    <footer>
+        <p>Click <a href="index.html">here</a> to return back to the main page!</p>
+    </footer>
+</body>
+</html>

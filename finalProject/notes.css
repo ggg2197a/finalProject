@@ -1,0 +1,38 @@
+body
+{
+    margin: 5px auto;
+    align-content: center;
+    background-color: #EDEDED;
+    font-family: 'Open Sans Condensed', sans-serif;
+    max-width: 56%;
+}
+
+h1, h2
+{
+    color: #000000;
+    padding: 1px;
+    text-align: center;
+}
+
+p
+{
+    background-color: #380057;
+    color: white;
+    padding: 7px;
+    font-size: 118%;
+    margin: 0;
+}
+
+a
+{
+    color: #C8003C;
+}
+
+ul
+{
+    text-align: center;
+    font-size: 118%;
+    font-weight: bold;
+    padding: 0;
+    list-style-type: none;
+}
