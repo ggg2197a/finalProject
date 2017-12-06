@@ -11,12 +11,12 @@ Landing Page with Menu-----------Chosen Area Page
           ^^ = = = = = = = = = = = = ^^
 
 The Current list of environments/games will be here: 
-Area
+Slider Ball Box
 
 
 In order to build new things using Matter.js, I will have to become aware of how the systems work, and how outside elements in the page can affect the created physics areas on the page. Along with basic and advanced functions used by the script, I will have to also learn how to elegantly design the page so it is easy to navigate, calm on the eyes, and interesting to the user. 
 
-Below is the link to my repository; it is public, and I will attempt to update it often with smaller, more easily built areas for use early on in order to build practice before attempting more advanced applications. 
+Below is the link to my repository; it is public.
 
 https://github.com/ggg2197a/finalProject
 
