@@ -11,7 +11,7 @@ Landing Page with Menu-----------Chosen Area Page
           ^^ = = = = = = = = = = = = ^^
 
 The Current list of environments/games will be here: 
-Slider Ball Box
+Slider, Ball, and Box
 
 
 In order to build new things using Matter.js, I will have to become aware of how the systems work, and how outside elements in the page can affect the created physics areas on the page. Along with basic and advanced functions used by the script, I will have to also learn how to elegantly design the page so it is easy to navigate, calm on the eyes, and interesting to the user. 
